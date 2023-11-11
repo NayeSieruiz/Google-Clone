@@ -1,0 +1,208 @@
+body{
+    /*margen del element0*/
+    margin: 0;
+
+    /*padding margen hacia adentro*/
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+/*+++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++*/
+
+/*NAVEGACIÓN*/
+header{
+    width: 100%;
+    height: 60px;
+    
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+/*    background-color: rgb(127, 127, 243);*/
+
+}
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    /*eliminar puntos de la lista*/
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; /*centrado verticalmente*/
+}
+
+a{
+    text-decoration: none; /*eliminar linea abajo del texto*/
+
+}
+nav .nav-right-section a{
+    color: black;
+    margin-right: 20px;
+}
+/* Ícono del menú */
+nav .nav-right-section .menu{
+    /* Agregar íconos desde css */
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /* Que la imagen esté contenida en el elemento más grande */
+    background-size: contain;
+    /* Para que las imágenes no se repitan */
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+
+}
+/* Imagen del usuarix */
+nav .nav-right-section img{
+    /* Redondeamos bordes */
+    border-radius: 100%;
+    /* Cambiar tamaño de la imagen */
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+
+}
+
+main {
+    /* Agregar espacio entre header y main */
+    margin-top: 200px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 550px;
+    /* background-color: rgb(168, 194, 39);*/
+    /* Centrar absolutamente gracias a los márgenes automáticos */
+    /* Vertical // Horizontal */
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img {
+    width: 280px !important;
+}
+
+main .main-input{
+    width: 530px; 
+    margin: 0 auto; 
+    margin-bottom: 35px;
+}
+
+main .main-input-container{
+    /*ancho borde || borde-estilo|| borde-color*/
+    border: 1px solid #dfe1e5;
+    border-radius:25px;
+    width: 525px;
+
+}
+main .main-input input{
+    height: 45px;
+    border: none;/*quitar borde*/
+    outline: none;
+    width: 70%;
+
+}
+
+main .main-input .search-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    padding-left: 10%;
+    }
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    padding-left: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 1px 3px 0 #8f918f;
+}
+main .main-buttons{
+    width: 530px;
+    margin:0 auto;
+}
+
+main .main-buttons div{
+    display:inline-block ;
+}
+main .main-buttons button{
+    height: 30px;
+    background-color: #f8f9fa;
+    border: none;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius:5px;
+    padding: 0 15px;
+    margin-right: 10px;
+}
+main .main-buttons button:hover{
+    box-shadow: 1px #dadce0;
+    border : 1px solid #dadce0;
+    color: #202124
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-top: 1px solid #c1c1c1;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    margin: 12px;
+    padding-left: 0;
+}
+
+footer .footer-left {
+    margin-left: 20px;
+}
+
+footer .footer-right {
+    margin-right: 36px;
+}
+
+footer ul li a {
+    margin: 12px;
+    color: #5e5d5d;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
+.español{
+    margin-top: 30px;
+}
+
+.español a.of {
+    color: rgb(86, 86, 86); /* Color gris para "Ofrecido por Google" */
+    margin-right: 20px;
+}
+
+.mexico{
+    list-style: none;
+    margin-right: 100%;
+    margin-top: 160px;
+}
+.mexico a {
+    color:#5e5d5d;
+}
